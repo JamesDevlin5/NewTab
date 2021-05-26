@@ -2,6 +2,72 @@ body {
     background-color: #043a4d;
 }
 
+.l-div {
+    max-width: 65%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #5762a0;
+    box-shadow: -4px 5px 7px 3px #7669a5;
+    font-size: 34px;
+    border: 2px outset #888888;
+}
+
+.li-div {
+    height: 180px;
+    width: 180px;
+    margin: 0.5em;
+    text-align: justify;
+    border-radius: inherit;
+    background-color: #445e63;
+    box-shadow: -4px 5px 7px 3px #8b8b53;
+}
+
+.li-div:hover {
+    background-color: #416b6e;
+    box-shadow: -2px 3px 4px 3px #a17644;
+}
+
+.li-div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-shadow: -2px 2px 3px black;
+}
+
+a:any-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fa-github {
+    color: Silver;
+}
+
+.nflx-text {
+    text-align: center;
+    color: FireBrick;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.fa-amazon {
+    color: DarkGoldenRod;
+}
+
+.fa-envelope-open {
+    color: Aqua;
+}
+
+.fa-youtube {
+    color: DarkRed;
+}
+
 .search {
     width: 42em;
     margin: auto;

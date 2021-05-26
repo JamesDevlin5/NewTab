@@ -80,6 +80,7 @@ a:any-link {
     border: 2px solid #404040;
     font-size: 12pt;
     color: #d4d4d4;
+    position: relative;
 }
 
 .s-form:hover {
@@ -117,7 +118,7 @@ input[type="search"]:focus {
 
 input[type="submit"] {
     width: 8em;
-    text-align: center;
+    text-indent: 1.5em;
     cursor: pointer;
     border-top-left-radius: unset;
     border-bottom-left-radius: unset;
@@ -129,6 +130,13 @@ input[type="submit"]:hover {
     text-decoration-thickness: 1.5px;
     background-color: #339157;
     color: black;
+}
+
+.fa-search {
+    position: absolute;
+    top: 0.5em;
+    right: 0.75em;
+    color: #915c20;
 }
 
 .eng-form {
@@ -214,15 +222,15 @@ input[type="submit"]:hover {
     justify-content: center;
 }
 
-.fa-caret-right {
+.fa-circle {
     position: absolute;
-    left: -0.7em;
+    left: -1.5em;
     color: #a00000;
-    text-shadow: -1px 1px 2px black;
+    text-shadow: -1px 1px 3px black;
     opacity: 0;
     transition: opacity 1s;
 }
 
 .eng-opt:checked+label i {
-    opacity: unset;
+    opacity: 80%;
 }

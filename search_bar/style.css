@@ -1,5 +1,5 @@
 body {
-    background-color: #4b4b4b;
+    background-color: #043a4d;
 }
 
 .search {
@@ -17,11 +17,11 @@ body {
 }
 
 .s-form:hover {
-    box-shadow: -2px 2px 3px 2px #e5e91b;
+    box-shadow: -3px 3px 3px 2px #d0af84;
 }
 
 .s-form:focus-within {
-    box-shadow: -1.5px 1.5px 3px 2px #1bc0e9;
+    box-shadow: -1.5px 1.5px 1.5px 1px #cdc733;
 }
 
 .s-bar {
@@ -55,7 +55,7 @@ input[type="submit"] {
     cursor: pointer;
     border-top-left-radius: unset;
     border-bottom-left-radius: unset;
-    background-color: #3e52ff;
+    background-color: #2937af;
 }
 
 input[type="submit"]:hover {
@@ -72,12 +72,22 @@ input[type="submit"]:hover {
 
 .eng-fields {
     border-radius: 10px;
-    box-shadow: -1px 3px 6px 3px #2d4885;
+    background-color: #30645d;
+    box-shadow: -1px 3px 6px 3px #6f8039;
 }
 
 .eng-leg {
-    color: #d1750c;
+    color: #d39522;
+    background-color: #674396;
+    padding: 0.5em;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-left: 2px solid #ffc2b4;
+    border-right: 2px solid #ffc2b4;
+    border-top: 2px dashed #ffc2b4;
     margin-bottom: 1em;
+    box-shadow: 0 2px 3px 2px #222222;
 }
 
 .eng-items {
@@ -103,20 +113,22 @@ input[type="submit"]:hover {
     text-indent: 2em;
     cursor: pointer;
     font-size: 18px;
-    background-color: #353535;
+    background-color: #3476a5;
     border-radius: 7px;
-    color: white;
-    transition: background-color 2s, box-shadow 0.5s;
+    color: #f0ebcc;
+    box-shadow: -1px 1px 3px 3px #325288;
+    transition: background-color 1s, box-shadow 0.5s;
 }
 
 .eng-item label:hover {
-    background-color: #00f0f0;
-    box-shadow: -2px 3px 4px 3px gold;
-    color: orangered;
+    background-color: #4154bb;
+    box-shadow: -1px 3px 5px 2px #f5f7b2;
+    color: #eeeeee;
 }
 
 .eng-opt:checked+label {
-    background-color: #005b00;
+    background-color: #77acf1;
+    color: #72241e;
     font-weight: bold;
 }
 
@@ -136,17 +148,13 @@ input[type="submit"]:hover {
     justify-content: center;
 }
 
-.a-eng:checked {
-    background-color: white;
-}
-
 .fa-caret-right {
     position: absolute;
     left: -0.7em;
     color: #a00000;
     text-shadow: -1px 1px 2px black;
     opacity: 0;
-    transition: margin-left 3s ease-in-out 1s, opacity 1s;
+    transition: opacity 1s;
 }
 
 .eng-opt:checked+label i {

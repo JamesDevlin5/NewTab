@@ -14,11 +14,15 @@
 
   <link rel="stylesheet"
         href="style.css" />
+
+  <script src="https://kit.fontawesome.com/0bf670c382.js"
+          crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header style="padding: 10%;"></header>
+  <header style="padding: 5%;"></header>
   <form role="search"
+        id="search-form"
         class="search"
         action="https://google.com/search">
     <div class="s-form">
@@ -35,6 +39,70 @@
              value="Search" />
     </div>
   </form>
+
+  <div style="padding: 5%;"></div>
+
+  <form id="engine-form">
+    <div class="eng-form">
+      <fieldset class="eng-fields">
+        <legend class="eng-leg">Search Engine Selection:</legend>
+
+        <div class="eng-items">
+          <div class="eng-item">
+            <input type="radio"
+                   id="google-eng"
+                   value="google"
+                   name="s-eng"
+                   class="eng-opt"
+                   checked />
+            <label for="google-eng">
+              <div class="a-eng"><i class="fas fa-caret-right fa-2x"></i>Google
+              </div>
+            </label>
+          </div>
+
+          <div class="eng-item">
+            <input type="radio"
+                   id="github-eng"
+                   value="github"
+                   name="s-eng"
+                   class="eng-opt" />
+            <label for="github-eng">
+              <div class="a-eng"><i class="fas fa-caret-right fa-2x"></i>GitHub
+              </div>
+            </label>
+          </div>
+
+          <div class="eng-item">
+            <input type="radio"
+                   id="crates-eng"
+                   value="crates"
+                   name="s-eng"
+                   class="eng-opt" />
+            <label for="crates-eng">
+              <div class="a-eng"><i
+                   class="fas fa-caret-right fa-2x"></i>Crates.io (Rust
+                Packages)</div>
+            </label>
+          </div>
+
+          <div class="eng-item">
+            <input type="radio"
+                   id="mdn-eng"
+                   value="mdn"
+                   name="s-eng"
+                   class="eng-opt" />
+            <label for="mdn-eng">
+              <div class="a-eng"><i class="fas fa-caret-right fa-2x"></i>Mozilla
+                Web Docs</div>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
